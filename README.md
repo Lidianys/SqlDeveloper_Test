@@ -8,7 +8,6 @@ This document provides a detailed explanation of how I completed the SQL Develop
 First, create a database where the tables and data will be stored. You can do this by executing the following SQL script in your database management tool:
 
 ```
-sql
 CREATE DATABASE survey_db;
 USE survey_db;
 ```
@@ -135,9 +134,9 @@ To perform advanced data analysis and retrieve complex insights, **run the `adva
 
 The CalculateSurveyScore stored procedure calculates the total score for a specified survey by summing the weighted responses. It accepts a survey ID as an input parameter and returns the total score based on predefined weights for each response. This procedure allows for efficient and reusable score calculation across different surveys
 
-To create the necessary stored procedure for calculating survey scores, **run the `stored_procedure.sql` script** in your database management tool. Once the procedure is created, it can be used as needed by calling it with the desired survey ID, for example: 
+To create the necessary stored procedure for calculating survey scores, **run the `stored_procedure.sql` script** in your database management tool. Once the procedure is created, it can be used as needed by calling it with the desired survey ID, for example:
+
 ```
-sql
 call CalculateSurveyScore(2);
 ```
 
